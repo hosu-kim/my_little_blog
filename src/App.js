@@ -55,8 +55,20 @@ function App() {
 				copy[0].title = '여자 코트 추천'; // 첫 번째 제목 수정
 				setTitle(copy);
 			}}>Update</button>
+
+			<Modal/>
 		</div>
 	);
+}
+
+const Modal = () => {
+	return (
+		<div className="modal">
+		<h4>제목</h4>
+		<p>날짜</p>
+		<p>상세 내용</p>
+		</div>
+	)
 }
 
 export default App;
