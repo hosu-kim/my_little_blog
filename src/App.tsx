@@ -1,9 +1,5 @@
-/* eslint-disable */
-
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { JSX, useState } from 'react';
 
 // Interface for blog post data
 interface BlogPost {
@@ -20,13 +16,11 @@ function App(): JSX.Element {
 		{ title: 'Things to See in Prague', date: 'Published April 22', likes: 0 }
 	]);
 
-	const [likes, setLikes] = useState<number[]>([0, 0, 0]);
-
 	// Function to increase likes with type annotations
 	const increaseLikes = (index: number): void => {
 		let copy = [...posts];
 		copy[index].likes += 1;
-		setLikes(copy);
+		setPosts(copy);
 	};
 
 	// Function to sort titles alphabetically
@@ -52,7 +46,7 @@ function App(): JSX.Element {
 						{ item.title }
 						<span onClick={() => increaseLikes(index)}>👍</span>
 						{ item.likes }
-					<p>{ item.date }</p>
+					<p className='publication-date'>{ item.date }</p>
 					</h4>
 				</div>
 			))}
