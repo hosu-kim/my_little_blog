@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# My Little Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, responsive React blog application built with TypeScript to showcase best practices and clean coding principles.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+This project demonstrates a simple blog interface with interactive features including:
+- Displaying blog posts with titles, dates, and content
+- Like functionality for each post
+- Alphabetical sorting of blog posts
+- Modal view for reading full post content
+- Responsive design for various screen sizes
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- TypeScript
+- CSS3
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+### Clean TypeScript Implementation
+- Proper interface definitions for blog posts and components
+- Strong typing for all functions and state variables
+- Explicit return type annotations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### React Best Practices
+- Functional components with React Hooks
+- Immutable state management
+- Component composition with props interface definitions
+- Conditional rendering
 
-### `npm run build`
+### Responsive UI Elements
+- Mobile-friendly design
+- Smooth animations and transitions
+- Intuitive user interactions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Code Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application consists of:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **App Component** - Main component that handles:
+	- Blog post state management
+	- Like functionality
+	- Sorting mechanism
+	- Modal display logic
+2. **Modal Component** - Reusable component for displaying full post content:
+	- Clean composition with props interface
+	- Reponsive design for different screen sizes
 
-### `npm run eject`
+## CSS Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Responsive design with media queries
+- Engaging animations for user interactions
+- Clean gradient backgrounds
+- Box shadows and transitions for depth
+- Hover states for interactive elements
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Clone the repository:
+```bash
+git clone https://github.com/hosu-kim/my_little_blog.git
+```
+```bash
+cd my_little_blog
+```
+2. Install dependencies:
+```bash
+npm install
+```
+3. Run the development server:
+```bash
+npm start
+```
+4. Open http://localhost:3000 to view it in the browser
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Author
+- hosu-kim
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+- This project is licensed unter the MIT License.
