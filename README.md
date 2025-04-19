@@ -1,5 +1,9 @@
 # My Little Blog
 
+<p align="center">
+  <img src="images/example.png" alt="Run example" width="400"/>
+</p>
+
 A clean, responsive React blog application built with TypeScript to showcase best practices and clean coding principles.
 
 ## Project Overview
